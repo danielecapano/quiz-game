@@ -16,7 +16,7 @@ const Home = () => {
           </h1>
           <img src={game} alt='' className='h-15' />
         </div>
-        <div className='flex flex-col items-center gap-4 mb-8 bg-gradient-box text-white p-8 rounded-6xl'>
+        <div className='flex flex-col items-center gap-4 mb-8 bg-gradient-box text-white p-8 rounded-6xl shadow-2xl'>
           <h3 className='text-xl font-medium'>
             Benvenuto su{" "}
             <span className='text-primary-3 font-bold'>Quiz! GAME</span>
