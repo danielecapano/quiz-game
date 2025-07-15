@@ -8,14 +8,8 @@ import Card from "./Card";
 // gsap.registerPlugin(useGSAP);
 
 const Cards = () => {
-  const {
-    questions,
-    countQuestions,
-    getNextQuestion,
-    score,
-    selectedAnswer,
-    isClickable,
-  } = useQuestionsContext();
+  const { questions, countQuestions, getNextQuestion, score, isClickable } =
+    useQuestionsContext();
 
   const question = questions[countQuestions];
   // const handleNextQuestion = () => {
