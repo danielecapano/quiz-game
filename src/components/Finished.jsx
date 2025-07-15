@@ -9,7 +9,7 @@ const Finished = () => {
         Congratulazioni!
       </h2>
       {/* <p className='w-50'>{getFinalMessage(score)}</p> */}
-      <p className='w-50 text-center mb-12'>
+      <p className='w-80 text-center font-bold text-xl mb-12'>
         Non importa quanti punti hai fatto,
         <br />
         tu sei l'amore mio e avrai sempre il punteggio massimo
