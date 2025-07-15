@@ -31,7 +31,7 @@ const QuestionsContextProvider = ({ children }) => {
       if (countQuestions === questions.length - 1) {
         setTimeout(() => {
           setStatus("finished");
-        }, 1000);
+        }, 2000);
       }
     }
   }, [selectedAnswer, countQuestions, questions]);
@@ -78,6 +78,7 @@ const QuestionsContextProvider = ({ children }) => {
     setScore(0);
     setCountQuestions(0);
     setSelectedAnswer(null);
+    setIsClickable(true);
   };
 
   const getCardsFromGemini = async () => {

@@ -5,11 +5,16 @@ const Finished = () => {
   const { score, getFinalMessage } = useQuestionsContext();
   return (
     <section className='flex flex-col items-center justify-center min-h-screen'>
-      <h2 className='text-3xl font-medium text-center mb-8'>
-        Hai totalizzato{" "}
-        <span className='text-azure-700 font-bold'>{score}</span> punti
+      <h2 className='text-5xl font-medium font-bangers text-center mb-8'>
+        Congratulazioni!
       </h2>
-      <p className='w-50'>{getFinalMessage(score)}</p>
+      {/* <p className='w-50'>{getFinalMessage(score)}</p> */}
+      <p className='w-50 text-center mb-12'>
+        Non importa quanti punti hai fatto,
+        <br />
+        tu sei l'amore mio e avrai sempre il punteggio massimo
+      </p>
+      <button className='btn'>ti amo</button>
     </section>
   );
 };

@@ -19,11 +19,12 @@ const Home = () => {
         <div className='flex flex-col items-center gap-4 mb-8 bg-gradient-box text-white p-8 rounded-6xl shadow-2xl'>
           <h3 className='text-xl font-medium'>
             Benvenuto su{" "}
-            <span className='text-primary-3 font-bold'>Quiz! GAME</span>
+            <span className='text-primary-1 font-bold'>Quiz! GAME</span>
           </h3>
           <p>
-            Mettiti alla prova con domande curiose, buffe e imprevedibili. Ridi,
-            impara e scopri quanto ne sai davvero... o quanto pensavi di
+            Mettiti alla prova con domande curiose, buffe e imprevedibili.
+            <br />
+            Ridi, impara e scopri quanto ne sai davvero... o quanto pensavi di
             saperne!
           </p>
           <p>Scegli un argomento per iniziare oppure affidati alla sorte</p>

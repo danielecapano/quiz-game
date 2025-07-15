@@ -25,7 +25,7 @@ const Card = ({ question }) => {
 
   return (
     <>
-      <div className='w-full h-40 bg-linear-to-br from-azure-700 to-azure-500 font-medium text-lg p-4 flex items-center justify-center rounded-2xl shadow-lg'>
+      <div className='w-full h-40 bg-gradient-box font-bold text-lg p-4 flex items-center justify-center rounded-6xl shadow-lg'>
         {question.question}
       </div>
       <div className='space-y-2 mt-4'>

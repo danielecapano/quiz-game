@@ -8,8 +8,14 @@ import Card from "./Card";
 // gsap.registerPlugin(useGSAP);
 
 const Cards = () => {
-  const { questions, countQuestions, getNextQuestion, score, selectedAnswer } =
-    useQuestionsContext();
+  const {
+    questions,
+    countQuestions,
+    getNextQuestion,
+    score,
+    selectedAnswer,
+    isClickable,
+  } = useQuestionsContext();
 
   const question = questions[countQuestions];
   // const handleNextQuestion = () => {
@@ -42,7 +48,7 @@ const Cards = () => {
 
   return (
     <>
-      <div className='relative w-full min-h-screen z-10 flex flex-col gap-4'>
+      <div className='relative w-full h-screen z-10 flex flex-col gap-4'>
         {questions && (
           <>
             <div className='flex justify-between items-center'>
@@ -61,16 +67,15 @@ const Cards = () => {
             </div>
 
             <Card question={question} />
-            <button
-              className='bg-azure-700 hover:bg-azure-800 text-white font-bold py-2 px-4 rounded-full grow-1 mt-auto'
-              onClick={getNextQuestion}
-              disabled={
-                countQuestions >= questions.length - 1 ||
-                selectedAnswer === null
-              }
-            >
-              Vai alla domanda successiva
-            </button>
+            <div className='flex flex-col items-center justify-end grow-1'>
+              <button
+                className='btn disabled:opacity-50 disabled:pointer-events-none'
+                onClick={getNextQuestion}
+                disabled={isClickable}
+              >
+                domanda successiva
+              </button>
+            </div>
           </>
         )}
       </div>

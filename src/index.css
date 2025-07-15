@@ -42,6 +42,17 @@
   --font-bangers: "Bangers", system-ui;
 
   --text-shadow-big: 6px 6px;
+
+  --animate-scale: scale 3s ease-in-out infinite;
+  @keyframes scale {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
 }
 
 body {
@@ -69,6 +80,7 @@ body {
 
 @utility bg-gradient-box {
   heigth: auto;
+  border: 5px solid var(--color-button-400);
   background-image: url("/decorations-box.svg"),
     linear-gradient(
       to bottom right,
@@ -96,16 +108,21 @@ body {
 @utility btn {
   background: linear-gradient(
     to bottom,
-    var(--color-button-300),
-    var(--color-button-500)
+    var(--color-accent-300),
+    var(--color-accent-500)
   );
   border: 5px solid var(--color-button-400);
-  box-shadow: 0px 8px var(--color-button-600);
-  font-family: var(--font-sigmar);
+  box-shadow: 0px 4px var(--color-button-600);
+  font-family: var(--font-bangers);
   font-size: 1.25rem;
   border-radius: 1rem;
   padding: 0.5rem 2rem;
   cursor: pointer;
+  &:active {
+    box-shadow: none;
+    transform: translateY(4px) scale(0.98);
+  }
+  transition: all 0.1s ease-in-out;
 }
 @utility btn-rounded {
   border-radius: 10rem;

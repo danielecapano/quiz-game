@@ -15,7 +15,7 @@ const App = () => {
     }
   }, [status]);
   return (
-    <main className='relative flex flex-col items-center min-h-screen bg-gradient-with-svg text-white p-5'>
+    <main className='relative flex flex-col items-center h-dvh bg-gradient-with-svg text-white p-5'>
       {/* <BgDotted /> */}
       {status === "start" && <Home />}
       {status === "loading" && <Loader />}
