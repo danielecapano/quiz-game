@@ -2,7 +2,7 @@ import React from "react";
 import { useQuestionsContext } from "../context/QuestionsContext";
 
 const Finished = () => {
-  const { score, getFinalMessage } = useQuestionsContext();
+  const { getResetQuestions } = useQuestionsContext();
   return (
     <section className='flex flex-col items-center justify-center min-h-screen'>
       <h2 className='text-5xl font-medium font-bangers text-center mb-8'>
@@ -14,7 +14,9 @@ const Finished = () => {
         <br />
         tu sei l'amore mio e avrai sempre il punteggio massimo
       </p>
-      <button className='btn'>ti amo</button>
+      <button className='btn' onClick={getResetQuestions}>
+        ti amo
+      </button>
     </section>
   );
 };

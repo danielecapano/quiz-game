@@ -31,7 +31,7 @@ const QuestionsContextProvider = ({ children }) => {
       if (countQuestions === questions.length - 1) {
         setTimeout(() => {
           setStatus("finished");
-        }, 2000);
+        }, 4000);
       }
     }
   }, [selectedAnswer, countQuestions, questions]);

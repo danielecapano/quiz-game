@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuestionsContext } from "../context/QuestionsContext";
-import sparkleStar from "../assets/sparkle-star.svg";
+// import sparkleStar from "../assets/sparkle-star.svg";
 import game from "../assets/game.svg";
 import play from "../assets/play.svg";
 
